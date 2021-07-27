@@ -91,7 +91,6 @@ public:
     // Если он начинается в то же время и достигает более раннего срока
     bool isEff3(list<Company>::iterator iter, list<Company>::iterator iter2) {
         return ((iter->getDepartureTime() == iter2->getDepartureTime()) &&
-                //        o Если он начинается в то же время и достигает более раннего срока, или
                 (iter->getArrivalTime() < iter2->getArrivalTime()));
     }// Если обе компании предлагают услуги с одинаковым временем - всегда выбирайте Posh.
     bool isEqbutName(list<Company>::iterator iter, list<Company>::iterator iter2) {
